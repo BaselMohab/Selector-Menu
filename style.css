@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(
+        135deg,
+        purple 20%,
+        orange 80%
+    );
+}
+
+.menu {
+    background-color: lightblue;
+    opacity: .5;
+    width: 300px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu .fa-sharp {
+    transition: transform .3s;
+}
+
+.menu p {
+    margin: 0 10px;
+display: flex;
+align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightblue;
+    opacity: .5;
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: padding .4s linear;
+}
+
+ul li:hover{
+    background-color: rgb(8, 62, 80);
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+}
+
+li .fa-brands {
+    margin: 0 10px;
+}
+
+.rotate .fa-sharp{
+    transform: rotate(180deg) ;
+}
+
+
+.hide {
+    visibility: hidden;
+}
